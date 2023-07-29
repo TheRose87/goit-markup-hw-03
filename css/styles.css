@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --iriscolor: #4d5ae5;
+  --navyblue: #2e2f42;
+  --navcolor: #2e2f42;
+  --oceancolor: #404bbf;
+  --slate: #434455;
+  --whitecolor: white;
+  --cloudcolor: #f4f4fd;
+  --cornflower: #e7e9fc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+}
+
+.logo-link {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0;
+  font-weight: 800;
+}
+.logo-link > span {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.logo {
+  color: var(--iriscolor);
+}
+
+.studio {
+  color: var(--navyblue);
+}
+
+.studio-footer {
+  color: var(--cloudcolor);
+}
+
+.nav-menu .page {
+  color: var(--navcolor);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+  color: var(--oceancolor);
+}
+
+.contacts-menu .item {
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.bg-hero {
+  background: var(--navyblue);
+}
+
+.hero-title {
+  color: var(--whitecolor);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  border-color: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.button.primary {
+  background: var(--iriscolor);
+  color: var(--whitecolor);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--oceancolor);
+}
+
+.button.filter {
+  background-color: var(--cloudcolor);
+  color: var(--iriscolor);
+  font-weight: 500;
+  line-height: 1.62;
+}
+
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+  background-color: var(--oceancolor);
+  color: var(--cloudcolor);
+}
+
+.bg-team {
+  background: var(--cloudcolor);
+}
+
+.team .name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  text-align: center;
+}
+
+.team .position {
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.benefits .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navyblue);
+}
+
+.benefits .description {
+  color: var(--slate);
+  line-height: 1.71;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bg-footer {
+  background: var(--navyblue);
+}
+
+.footer-description {
+  color: var(--whitecolor);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.project {
+  text-decoration: none;
+}
+
+.project .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--navyblue);
+}
+
+.type {
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+}

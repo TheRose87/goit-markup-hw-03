@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
@@ -16,45 +20,51 @@
   <body>
     <!--This is the header-->
     <header class="page-header">
-      <!--The navigation menu-->
-      <nav>
-        <!--Page Logo-->
-        <a class="logo-link" href="./index.html">
-          <span class="logo">WEB</span>
-          <span class="studio">STUDIO</span>
-        </a>
-        <ul class="nav-menu list">
-          <li>
-            <a href="./index.html" class="page current">Studio</a>
+      <div class="container menu">
+        <!--The navigation menu-->
+        <nav class="navigation">
+          <!--Page Logo-->
+          <a class="logo-link" href="./index.html">
+            <span class="logo">WEB</span>
+            <span class="studio">STUDIO</span>
+          </a>
+          <ul class="nav-menu list">
+            <li class="item">
+              <a href="./index.html" class="page current link">Studio</a>
+            </li>
+            <li class="item">
+              <a href="portfolio.html" class="page link">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="./index.html" class="page link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Inserting unordered list with hyperlink (mail and tel)-->
+        <ul class="contacts-menu list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contact link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a href="portfolio.html" class="page">Portfolio</a>
-          </li>
-          <li>
-            <a href="./index.html" class="page">Contacts</a>
+          <li class="item">
+            <a href="tel:+110001111111" class="contact link"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <!--Inserting unordered list with hyperlink (mail and tel)-->
-      <ul class="contacts-menu list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="item"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+110001111111" class="item">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!--This is the Main-->
     <main>
       <!--This is Section 1-->
       <section class="hero bg-hero">
-        <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
-        <button type="button" class="button primary">Order Service</button>
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
+          <button type="button" class="button primary">Order Service</button>
+        </div>
       </section>
 
       <!--This is Section 2-->
@@ -142,8 +152,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Mark Guerero</h3>
-              <p class="position">Product Designer</p>
+              <div class="team-description">
+                <h3 class="name">Mark Guerero</h3>
+                <p class="position">Product Designer</p>
+              </div>
             </li>
             <li>
               <img
@@ -152,8 +164,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Tom Ford</h3>
-              <p class="position">Frontend Developer</p>
+              <div class="team-description">
+                <h3 class="name">Tom Ford</h3>
+                <p class="position">Frontend Developer</p>
+              </div>
             </li>
             <li>
               <img
@@ -162,8 +176,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Camila Garcia</h3>
-              <p class="position">Marketing</p>
+              <div class="team-description">
+                <h3 class="name">Camila Garcia</h3>
+                <p class="position">Marketing</p>
+              </div>
             </li>
             <li>
               <img
@@ -172,8 +188,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Daniel Wilson</h3>
-              <p class="position">UI Designer</p>
+              <div class="team-description">
+                <h3 class="name">Daniel Wilson</h3>
+                <p class="position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -182,7 +200,7 @@
 
     <!--This is the Footer-->
     <footer class="page-footer bg-footer">
-      <div>
+      <div class="container">
         <a class="logo-link" href="./index.html">
           <span class="logo">WEB</span>
           <span class="studio-footer">STUDIO</span>
